@@ -663,17 +663,18 @@ div[data-testid="stExpander"] details > div {{
     min-width: fit-content !important;
     height: auto !important;
     
-    /* FIX: Align to the LEFT (next to the button) */
-    margin-left: 0 !important;
-    margin-right: auto !important;
-    align-self: flex-start !important; /* Ensures it stays on the left side */
+    /* FIX: Fixed margin to clear the button (~45px) + a small gap (~15px) */
+    margin-left: 60px !important; 
+    margin-right: auto !important; /* Prevents it from centering or going right */
+    
+    /* Align to start (left side) */
+    align-self: flex-start !important; 
 
-    /* Internal layout fixes */
+    /* Visual Styles */
     position: relative !important;
     overflow: visible !important;
     padding: 22px 22px 20px 22px !important;
     padding-bottom: 70px !important;
-    
     border-radius: 24px !important;
     background:
         linear-gradient(rgba(10, 12, 22, 0.86), rgba(10, 12, 22, 0.86)) padding-box,
@@ -694,8 +695,7 @@ div[data-testid="stPopoverBody"] * {{
     div[data-testid="stPopoverBody"],
     div[data-testid="stExpander"] details > div {{
         max-width: calc(100vw - 28px) !important;
-        /* On mobile, we might want it centered, or keep it left. 
-           Delete the lines below if you want it left-aligned on mobile too. */
+        /* On mobile, usually safer to center it again */
         margin-left: auto !important;
         margin-right: auto !important;
     }}
