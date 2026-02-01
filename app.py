@@ -301,7 +301,7 @@ html, body, [data-testid="stAppViewContainer"] {{
 .brand {{
   font-weight: 950;
   letter-spacing: -0.02em;
-  font-size: clamp(28px, 4vw, 36px);
+  font-size: clamp(32px, 4.2vw, 40px);
   line-height: 1.3;
   padding-bottom: 0.1em;
   display: inline-flex;
@@ -659,25 +659,39 @@ div[data-testid="stExpander"] summary svg {{ display:none !important; }}
 
 div[data-testid="stPopoverBody"],
 div[data-testid="stExpander"] details > div {{
-width: min(80vw, 240px) !important; 
-height: 70px !important;
-margin: 0 auto !important;         
-padding-bottom: 80px !important;     
-height: auto !important;             
-overflow: visible !important;        
-  padding: 22px 22px 20px 22px !important;
-  padding-bottom: 80px;
-  border-radius: 24px !important;
-  background:
-    linear-gradient(rgba(10, 12, 22, 0.86), rgba(10, 12, 22, 0.86)) padding-box,
-    linear-gradient(135deg, rgba(255,43,214,0.62), rgba(0,229,255,0.52), rgba(139,92,246,0.40)) border-box !important;
-  border: 1px solid transparent !important;
-  box-shadow:
-    0 20px 70px rgba(0,0,0,0.65),
-    0 0 26px rgba(255,43,214,0.12),
-    0 0 22px rgba(0,229,255,0.10) !important;
-  backdrop-filter: blur(14px) !important;
-  align-self: flex-end !important;
+    width: min(80vw, 210px) !important;
+    min-width: fit-content !important;
+    margin: 0 auto !important;
+    
+    /* Keeps the icons inside the container */
+    position: relative !important;
+    
+    padding-bottom: 70px !important;
+    height: auto !important;
+    overflow: visible !important;
+    padding: 22px 22px 20px 22px !important;
+    border-radius: 24px !important;
+    background:
+        linear-gradient(rgba(10, 12, 22, 0.86), rgba(10, 12, 22, 0.86)) padding-box,
+        linear-gradient(135deg, rgba(255,43,214,0.62), rgba(0,229,255,0.52), rgba(139,92,246,0.40)) border-box !important;
+    border: 1px solid transparent !important;
+    box-shadow:
+        0 20px 70px rgba(0,0,0,0.65),
+        0 0 26px rgba(255,43,214,0.12),
+        0 0 22px rgba(0,229,255,0.10) !important;
+    backdrop-filter: blur(14px) !important;
+    align-self: flex-end !important;
+}}
+
+div[data-testid="stPopoverBody"] * {{
+    background-color: transparent !important;
+}}
+
+@media (max-width: 640px) {{
+    div[data-testid="stPopoverBody"],
+    div[data-testid="stExpander"] details > div {{
+        max-width: calc(100vw - 28px) !important;
+    }}
 }}
 div[data-testid="stPopoverBody"] * {{
   background-color: transparent !important;
