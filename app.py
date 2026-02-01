@@ -1049,17 +1049,11 @@ with menu_col:
               <a href="https://github.com" target="_blank" aria-label="GitHub 1">
                 <img src="https://github.githubassets.com/favicons/favicon.png" />
               </a>
-              <a href="https://github.com" target="_blank" aria-label="GitHub 2">
-                <img src="https://github.githubassets.com/favicons/favicon.png" />
+              <a href="https://za.linkedin.com/in/emmie-cockcroft-b57969296" target="_blank" aria-label="LinkedIn">
+                <img src="https://cdn-icons-png.flaticon.com/512/61/61109.png" />
               </a>
-              <a href="https://github.com" target="_blank" aria-label="GitHub 3">
-                <img src="https://github.githubassets.com/favicons/favicon.png" />
-              </a>
-              <a href="https://github.com" target="_blank" aria-label="GitHub 4">
-                <img src="https://github.githubassets.com/favicons/favicon.png" />
-              </a>
-              <a href="https://github.com" target="_blank" aria-label="GitHub 5">
-                <img src="https://github.githubassets.com/favicons/favicon.png" />
+              <a href="https://xoxothefrozenfox.github.io/EmmieCockcroftCV/" target="_blank" aria-label="CV">
+                <img src="https://cdn-icons-png.flaticon.com/512/6406/6406017.png" />
               </a>
             </div>
             """,
@@ -1079,6 +1073,19 @@ if st.session_state.page == "Researcher Profile":
             <div class="p">I am a committed pharmacy student with a strong desire to help those in need of medical care.
             I thrive in both collaborative and independent work environments, and I enjoy continuously learning.</div>
             <div class="p">Outside the medical realm, I find joy in teaching/tutoring, art, resin printing, and gaming.</div>
+            <div style="display: grid; grid-template-columns: repeat(4, 1fr); gap: 20px; color: #cbd5e1; margin-top: 10px; font-size: 16px;">
+            <div>☕ Tea</div>
+            <div>🎮 Gaming</div>
+            <div>🍴 Cooking</div>
+            <div>🖨️ 3D-Printing</div>
+            <div>🖥️ Technology</div>
+            <div>✈️ Traveling</div>
+            <div>📕 Reading</div>
+            <div>⚗️ Science</div>
+            <div>🖌️ Art</div>
+            <div>🐾 Pet-training</div>
+            <div>🌿 Gardening</div>
+            <div>💼 Business</div>
             """
         )
 
