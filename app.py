@@ -301,7 +301,7 @@ html, body, [data-testid="stAppViewContainer"] {{
 .brand {{
   font-weight: 950;
   letter-spacing: -0.02em;
-  font-size: clamp(22px, 3.2vw, 30px);
+  font-size: clamp(28px, 5vw + 1rem, 64px);
   line-height: 1.05;
   display: inline-flex;
   align-items: baseline;
@@ -658,13 +658,14 @@ div[data-testid="stExpander"] summary svg {{ display:none !important; }}
 
 div[data-testid="stPopoverBody"],
 div[data-testid="stExpander"] details > div {{
-  width: 340px !important;
-  padding: 14px 14px 12px 14px !important;
+  width: 520px !important;
+  max-width: 560px !important;
+  padding: 22px 22px 20px 22px !important;
+  border-radius: 24px !important;
   background:
     linear-gradient(rgba(10, 12, 22, 0.86), rgba(10, 12, 22, 0.86)) padding-box,
     linear-gradient(135deg, rgba(255,43,214,0.62), rgba(0,229,255,0.52), rgba(139,92,246,0.40)) border-box !important;
   border: 1px solid transparent !important;
-  border-radius: 20px !important;
   box-shadow:
     0 20px 70px rgba(0,0,0,0.65),
     0 0 26px rgba(255,43,214,0.12),
@@ -929,7 +930,7 @@ with header_block:
         """
         <div class="headerWrap">
           <div class="brand">
-            🧬 <span class="title">Drug Design Lab</span>
+            ⌬⏣🧬 <span class="title">Drug Design Lab</span>
             <span class="typeWrap">
               <span id="typeText" class="typeText" aria-label="typing-roles"></span>
               <span class="cursor">▍</span>
@@ -1073,8 +1074,8 @@ if st.session_state.page == "Researcher Profile":
             <div class="p">I am a committed pharmacy student with a strong desire to help those in need of medical care.
             I thrive in both collaborative and independent work environments, and I enjoy continuously learning.</div>
             <div class="p">Outside the medical realm, I find joy in teaching/tutoring, art, resin printing, and gaming.</div>
-            <div style="display: grid; grid-template-columns: repeat(4, 1fr); gap: 20px; color: #cbd5e1; margin-top: 10px; font-size: 16px;">
-            <div>☕ Tea</div>
+            <div class="card-title grad-title" style="margin-top: 25px; margin-bottom: 15px;">Interests</div>
+            <div style="display: grid; grid-template-columns: repeat(4, 1fr); gap: 15px; row-gap: 20px; color: #cbd5e1; font-size: 16px;"><div>☕ Tea</div>
             <div>🎮 Gaming</div>
             <div>🍴 Cooking</div>
             <div>🖨️ 3D-Printing</div>
