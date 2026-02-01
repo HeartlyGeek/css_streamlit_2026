@@ -659,7 +659,11 @@ div[data-testid="stExpander"] summary svg {{ display:none !important; }}
 
 div[data-testid="stPopoverBody"],
 div[data-testid="stExpander"] details > div {{
-  width: min(90vw, 380px); !important;
+width: min(90vw, 340px) !important;  
+margin: 0 auto !important;         
+padding-bottom: 80px !important;     
+height: auto !important;             
+overflow: visible !important;        
   padding: 22px 22px 20px 22px !important;
   padding-bottom: 40px;
   border-radius: 24px !important;
@@ -672,7 +676,6 @@ div[data-testid="stExpander"] details > div {{
     0 0 26px rgba(255,43,214,0.12),
     0 0 22px rgba(0,229,255,0.10) !important;
   backdrop-filter: blur(14px) !important;
-  overflow: hidden !important;
   align-self: flex-end !important;
 }}
 div[data-testid="stPopoverBody"] * {{
