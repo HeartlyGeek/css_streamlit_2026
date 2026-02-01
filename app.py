@@ -659,68 +659,24 @@ div[data-testid="stExpander"] summary svg {{ display:none !important; }}
 
 div[data-testid="stPopoverBody"],
 div[data-testid="stExpander"] details > div {{
-    width: min(80vw, 210px) !important;
-    min-width: fit-content !important;
-    height: auto !important;
-    
-    /* FIX: Fixed margin to clear the button (~45px) + a small gap (~15px) */
-    margin-left: 60px !important; 
-    margin-right: auto !important; /* Prevents it from centering or going right */
-    
-    /* Align to start (left side) */
-    align-self: flex-start !important; 
-
-    /* Visual Styles */
-    position: relative !important;
-    overflow: visible !important;
-    padding: 22px 22px 20px 22px !important;
-    padding-bottom: 70px !important;
-    border-radius: 24px !important;
-    background:
-        linear-gradient(rgba(10, 12, 22, 0.86), rgba(10, 12, 22, 0.86)) padding-box,
-        linear-gradient(135deg, rgba(255,43,214,0.62), rgba(0,229,255,0.52), rgba(139,92,246,0.40)) border-box !important;
-    border: 1px solid transparent !important;
-    box-shadow:
-        0 20px 70px rgba(0,0,0,0.65),
-        0 0 26px rgba(255,43,214,0.12),
-        0 0 22px rgba(0,229,255,0.10) !important;
-    backdrop-filter: blur(14px) !important;
-}}
-
-div[data-testid="stPopoverBody"] * {{
-    background-color: transparent !important;
-}}
-
-@media (max-width: 640px) {{
-    div[data-testid="stPopoverBody"],
-    div[data-testid="stExpander"] details > div {{
-        max-width: calc(100vw - 28px) !important;
-        /* On mobile, usually safer to center it again */
-        margin-left: auto !important;
-        margin-right: auto !important;
-    }}
-}}
-
-div[data-testid="stPopoverBody"] * {{
-    background-color: transparent !important;
-}}
-
-@media (max-width: 640px) {{
-    div[data-testid="stPopoverBody"],
-    div[data-testid="stExpander"] details > div {{
-        max-width: calc(100vw - 28px) !important;
-    }}
-}}
-
-div[data-testid="stPopoverBody"] * {{
-    background-color: transparent !important;
-}}
-
-@media (max-width: 640px) {{
-    div[data-testid="stPopoverBody"],
-    div[data-testid="stExpander"] details > div {{
-        max-width: calc(100vw - 28px) !important;
-    }}
+width: min(80vw, 240px) !important; 
+margin: 0 auto !important;         
+padding-bottom: 80px !important;     
+height: auto !important;             
+overflow: visible !important;        
+  padding: 22px 22px 20px 22px !important;
+  padding-bottom: 80px;
+  border-radius: 24px !important;
+  background:
+    linear-gradient(rgba(10, 12, 22, 0.86), rgba(10, 12, 22, 0.86)) padding-box,
+    linear-gradient(135deg, rgba(255,43,214,0.62), rgba(0,229,255,0.52), rgba(139,92,246,0.40)) border-box !important;
+  border: 1px solid transparent !important;
+  box-shadow:
+    0 20px 70px rgba(0,0,0,0.65),
+    0 0 26px rgba(255,43,214,0.12),
+    0 0 22px rgba(0,229,255,0.10) !important;
+  backdrop-filter: blur(14px) !important;
+  align-self: flex-end !important;
 }}
 div[data-testid="stPopoverBody"] * {{
   background-color: transparent !important;
