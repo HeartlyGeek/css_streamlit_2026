@@ -661,16 +661,19 @@ div[data-testid="stPopoverBody"],
 div[data-testid="stExpander"] details > div {{
     width: min(80vw, 210px) !important;
     min-width: fit-content !important;
-    
-    /* FIX: Changed from '0 auto' (center) to 'left: auto' (right-aligned) */
-    margin-left: auto !important; 
-    margin-right: 0 !important;
-    
-    position: relative !important;
-    padding-bottom: 70px !important;
     height: auto !important;
+    
+    /* FIX: Align to the LEFT (next to the button) */
+    margin-left: 0 !important;
+    margin-right: auto !important;
+    align-self: flex-start !important; /* Ensures it stays on the left side */
+
+    /* Internal layout fixes */
+    position: relative !important;
     overflow: visible !important;
     padding: 22px 22px 20px 22px !important;
+    padding-bottom: 70px !important;
+    
     border-radius: 24px !important;
     background:
         linear-gradient(rgba(10, 12, 22, 0.86), rgba(10, 12, 22, 0.86)) padding-box,
@@ -681,7 +684,21 @@ div[data-testid="stExpander"] details > div {{
         0 0 26px rgba(255,43,214,0.12),
         0 0 22px rgba(0,229,255,0.10) !important;
     backdrop-filter: blur(14px) !important;
-    align-self: flex-end !important;
+}}
+
+div[data-testid="stPopoverBody"] * {{
+    background-color: transparent !important;
+}}
+
+@media (max-width: 640px) {{
+    div[data-testid="stPopoverBody"],
+    div[data-testid="stExpander"] details > div {{
+        max-width: calc(100vw - 28px) !important;
+        /* On mobile, we might want it centered, or keep it left. 
+           Delete the lines below if you want it left-aligned on mobile too. */
+        margin-left: auto !important;
+        margin-right: auto !important;
+    }}
 }}
 
 div[data-testid="stPopoverBody"] * {{
