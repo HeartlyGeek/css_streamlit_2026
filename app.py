@@ -301,8 +301,9 @@ html, body, [data-testid="stAppViewContainer"] {{
 .brand {{
   font-weight: 950;
   letter-spacing: -0.02em;
-  font-size: clamp(24px, 5vw + 1rem, 64px);
-  line-height: 1.05;
+  font-size: clamp(22px, 4vw + 1rem, 48px);
+  line-height: 1.3;
+  padding-bottom: 0.1em;
   display: inline-flex;
   align-items: baseline;
   gap: 10px;
@@ -316,7 +317,7 @@ html, body, [data-testid="stAppViewContainer"] {{
 .subtitle {{
   margin-top: 6px;
   color: var(--muted);
-  font-size: 14px;
+  font-size: 16 px;
 }}
 
 /* ===== Typing animation next to title ===== */
