@@ -303,7 +303,7 @@ html, body, [data-testid="stAppViewContainer"] {{
   letter-spacing: -0.02em;
   font-size: clamp(28px, 6vw, 34px);
   line-height: 1.3;
-  padding-bottom: 0.3em;
+  padding-bottom: 0.2em;
   display: inline-flex;
   align-items: baseline;
   gap: 10px;
