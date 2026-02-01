@@ -1,0 +1,22 @@
+# Streamlit config
+.streamlit/
+
+# Temporary / notes
+todo.txt
+email_template.txt
+tempapp.py
+
+# Python cache
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Virtual environments
+env/
+venv/
+.venv/
+
+# OS files
+.DS_Store
+Thumbs.db
