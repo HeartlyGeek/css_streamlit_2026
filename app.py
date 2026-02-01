@@ -301,9 +301,9 @@ html, body, [data-testid="stAppViewContainer"] {{
 .brand {{
   font-weight: 950;
   letter-spacing: -0.02em;
-  font-size: clamp(22px, 4vw + 1rem, 48px);
+  font-size: clamp(28px, 6vw, 32px);
   line-height: 1.3;
-  padding-bottom: 0.1em;
+  padding-bottom: 1em;
   display: inline-flex;
   align-items: baseline;
   gap: 10px;
