@@ -661,11 +661,12 @@ div[data-testid="stPopoverBody"],
 div[data-testid="stExpander"] details > div {{
     width: min(80vw, 210px) !important;
     min-width: fit-content !important;
-    margin: 0 auto !important;
     
-    /* Keeps the icons inside the container */
+    /* FIX: Changed from '0 auto' (center) to 'left: auto' (right-aligned) */
+    margin-left: auto !important; 
+    margin-right: 0 !important;
+    
     position: relative !important;
-    
     padding-bottom: 70px !important;
     height: auto !important;
     overflow: visible !important;
@@ -681,6 +682,17 @@ div[data-testid="stExpander"] details > div {{
         0 0 22px rgba(0,229,255,0.10) !important;
     backdrop-filter: blur(14px) !important;
     align-self: flex-end !important;
+}}
+
+div[data-testid="stPopoverBody"] * {{
+    background-color: transparent !important;
+}}
+
+@media (max-width: 640px) {{
+    div[data-testid="stPopoverBody"],
+    div[data-testid="stExpander"] details > div {{
+        max-width: calc(100vw - 28px) !important;
+    }}
 }}
 
 div[data-testid="stPopoverBody"] * {{
