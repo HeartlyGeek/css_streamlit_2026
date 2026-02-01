@@ -659,13 +659,13 @@ div[data-testid="stExpander"] summary svg {{ display:none !important; }}
 
 div[data-testid="stPopoverBody"],
 div[data-testid="stExpander"] details > div {{
-width: min(85vw, 280px) !important; 
+width: min(80vw, 240px) !important; 
 margin: 0 auto !important;         
 padding-bottom: 80px !important;     
 height: auto !important;             
 overflow: visible !important;        
   padding: 22px 22px 20px 22px !important;
-  padding-bottom: 40px;
+  padding-bottom: 80px;
   border-radius: 24px !important;
   background:
     linear-gradient(rgba(10, 12, 22, 0.86), rgba(10, 12, 22, 0.86)) padding-box,
