@@ -301,9 +301,9 @@ html, body, [data-testid="stAppViewContainer"] {{
 .brand {{
   font-weight: 950;
   letter-spacing: -0.02em;
-  font-size: clamp(28px, 6vw, 34px);
+  font-size: clamp(28px, 4vw, 36px);
   line-height: 1.3;
-  padding-bottom: 0.2em;
+  padding-bottom: 0.1em;
   display: inline-flex;
   align-items: baseline;
   gap: 10px;
@@ -1076,7 +1076,7 @@ if st.session_state.page == "Researcher Profile":
             I thrive in both collaborative and independent work environments, and I enjoy continuously learning.</div>
             <div class="p">Outside the medical realm, I find joy in teaching/tutoring, art, resin printing, and gaming.</div>
             <div class="card-title grad-title" style="margin-top: 25px; margin-bottom: 15px;">Interests</div>
-            <div style="display: grid; grid-template-columns: repeat(4, 1fr); gap: 15px; row-gap: 20px; color: #cbd5e1; font-size: 16px;"><div>☕ Tea</div>
+            <div style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 15px; row-gap: 20px; color: #cbd5e1; font-size: 14px;"><div>☕ Tea</div>
             <div>🎮 Gaming</div>
             <div>🍴 Cooking</div>
             <div>🖨️ 3D-Printing</div>
