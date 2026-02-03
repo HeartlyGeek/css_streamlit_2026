@@ -661,7 +661,7 @@ div[data-testid="stPopoverBody"],
 div[data-testid="stExpander"] details > div {{
 width: min(80vw, 210px) !important;
 min-width: fit-content !important;
-height: fit-content !important; 
+height: auto !important; 
 margin: 0 auto !important;         
 padding-bottom: 80px !important;                 
 overflow: visible !important;        
